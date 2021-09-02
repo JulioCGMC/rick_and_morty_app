@@ -82,7 +82,7 @@ class EpisodeCard extends StatelessWidget {
           child: FadeInImage.assetNetwork(
             placeholder: "assets/img/placeholder.png", 
             image: snapshot.data!.image,
-            fit: BoxFit.fill,
+            fit: BoxFit.fitWidth
           )
         );
       }
