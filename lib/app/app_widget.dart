@@ -16,11 +16,11 @@ class AppWidget extends StatelessWidget {
         title: Metadata.appName,
         theme: ThemeData.from(
           colorScheme: DefaultStyle.light, 
-          textTheme: CustomTextTheme()
+          textTheme: CustomTextTheme.light
         ),
         darkTheme: ThemeData.from(
           colorScheme: DefaultStyle.dark,
-          textTheme: CustomTextTheme()
+          textTheme: CustomTextTheme.dark
         ),
         initialRoute: '/',
         builder: asuka.builder,

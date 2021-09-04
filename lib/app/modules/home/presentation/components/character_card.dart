@@ -43,10 +43,10 @@ class CharacterCard extends StatelessWidget {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Text(character.name, style: CustomTextTheme().headline4),
-        Text("Espécie: ${character.species}", style: CustomTextTheme().subtitle1),
-        Text("Gênero: ${character.gender.name}", style: CustomTextTheme().subtitle1),
-        Text("Situação atual: ${character.status.name}", style: CustomTextTheme().subtitle1),
+        Text(character.name, style: CustomTextTheme.currentTheme.headline4),
+        Text("Espécie: ${character.species}", style: CustomTextTheme.currentTheme.subtitle1),
+        Text("Gênero: ${character.gender.name}", style: CustomTextTheme.currentTheme.subtitle1),
+        Text("Situação atual: ${character.status.name}", style: CustomTextTheme.currentTheme.subtitle1),
       ],
     ),
   );

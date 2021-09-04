@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rick_n_morty_app/app/core/constants/default_style.dart';
 import 'package:rick_n_morty_app/app/modules/home/presentation/components/character_card.dart';
+import 'package:rick_n_morty_app/app/modules/home/presentation/components/title_bar_widget.dart';
 import 'package:rick_n_morty_app/app/modules/home/presentation/controllers/characters_controller.dart';
 
 class CharactersTab extends StatelessWidget {
@@ -12,19 +12,10 @@ class CharactersTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    EdgeInsets padding = MediaQuery.of(context).padding;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Padding(
-          padding: EdgeInsets.only(top: 0.03.sh+padding.top, 
-            left: 0.04.sw, bottom: 10.h),
-          child: Text(
-            "Personagens", 
-            style: Theme.of(context).textTheme.headline5,
-            textAlign: TextAlign.left,
-          )  
-        ),
+        TitleBarWidget(title: "Personagens"),
         Expanded(
           child: Observer(
             name: "Characters observer",

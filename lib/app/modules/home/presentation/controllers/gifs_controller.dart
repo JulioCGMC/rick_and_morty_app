@@ -2,11 +2,7 @@ import 'package:asuka/asuka.dart';
 import 'package:dartz/dartz.dart';
 import 'package:mobx/mobx.dart';
 import 'package:rick_n_morty_app/app/core/errors/errors.dart';
-import 'package:rick_n_morty_app/app/core/functions/functions.dart';
-import 'package:rick_n_morty_app/app/modules/home/domain/entities/character.dart';
-import 'package:rick_n_morty_app/app/modules/home/domain/entities/location.dart';
 import 'package:rick_n_morty_app/app/modules/home/domain/repositories/giphy_interface.dart';
-import 'package:rick_n_morty_app/app/modules/home/domain/repositories/rick_n_morty_interface.dart';
 import 'package:rick_n_morty_app/app/modules/home/presentation/controllers/home_controller.dart';
 
 part 'gifs_controller.g.dart';

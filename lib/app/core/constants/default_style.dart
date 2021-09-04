@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class DefaultStyle {
   // final MaterialColor swatch = 
-  static LightTheme light = LightTheme();
+  static const LightTheme light = LightTheme();
   static DarkTheme dark = DarkTheme();
 
   static ColorScheme get currentTheme {
@@ -12,16 +12,16 @@ class DefaultStyle {
 
 class LightTheme extends ColorScheme {
   const LightTheme({
-    primary = const Color(0xFFAA7BE5),
-    primaryVariant = const Color(0xFF772AD5),
-    secondary = const Color(0xFF60DBC6),
-    secondaryVariant = const Color(0xFF2FD0B5),
-    surface = const Color(0xFF3C3E44),
-    background = const Color(0xFF24282F),
+    primary = const Color(0xFF87BD44),
+    primaryVariant = const Color(0xFF4B9A3F),
+    secondary = const Color(0xFFEEE217),
+    secondaryVariant = const Color(0xFFCAD64C),
+    surface = const Color(0xFFF1F2F3),
+    background = const Color(0xFFFFFFFF),
     error = const Color(0xFFED4954),
     onPrimary = Colors.white,
-    onSecondary = Colors.black,
-    onSurface = Colors.black,
+    onSecondary = Colors.white,
+    onSurface = Colors.black45,
     onBackground = Colors.black,
     onError = Colors.white,
     brightness = Brightness.light
@@ -51,10 +51,10 @@ class DarkTheme extends ColorScheme {
     surface = const Color(0xFF3C3E44),
     background = const Color(0xFF24282F),
     error = const Color(0xFFED4954),
-    onPrimary = Colors.white,
+    onPrimary = Colors.black,
     onSecondary = Colors.black,
-    onSurface = Colors.black,
-    onBackground = Colors.black,
+    onSurface = Colors.white70,
+    onBackground = Colors.white,
     onError = Colors.white,
     brightness = Brightness.dark,
   }) : super(

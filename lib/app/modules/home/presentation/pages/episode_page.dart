@@ -24,12 +24,12 @@ class EpisodePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(episode.name, 
-              style: CustomTextTheme().headline3, 
+              style: CustomTextTheme.currentTheme.headline3, 
               textAlign: TextAlign.center
             ),
             SizedBox(height: 10.h),
             Text("Ao ár em: ${translateDate(episode.episodeCode)}", 
-              style: CustomTextTheme().subtitle2, 
+              style: CustomTextTheme.currentTheme.subtitle2, 
               textAlign: TextAlign.center
             ),
             Padding(

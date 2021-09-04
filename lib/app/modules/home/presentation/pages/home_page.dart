@@ -25,7 +25,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
     if (updateController) {
       _pageController.animateToPage(newIndex, 
         duration: Duration(microseconds: 300), curve: Curves.easeIn);
-    };
+    }
     setState(() { currentPage = newIndex; });
   }
 

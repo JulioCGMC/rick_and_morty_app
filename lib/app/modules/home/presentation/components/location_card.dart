@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rick_n_morty_app/app/core/constants/custom_text_theme.dart';
-import 'package:rick_n_morty_app/app/core/constants/default_style.dart';
-import 'package:rick_n_morty_app/app/core/functions/functions.dart';
-import 'package:rick_n_morty_app/app/modules/home/domain/entities/character.dart';
 import 'package:rick_n_morty_app/app/modules/home/domain/entities/location.dart';
 import 'package:rick_n_morty_app/app/modules/home/presentation/controllers/locations_controller.dart';
 
@@ -29,13 +25,13 @@ class LocationCard extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(location.name, style: CustomTextTheme().headline6),
+        Text(location.name, style: CustomTextTheme.currentTheme.headline6),
         Text("População: ${location.residents?.length ?? ''}", 
-          style: CustomTextTheme().subtitle2),
+          style: CustomTextTheme.currentTheme.subtitle2),
         Text("Tipo: ${location.type ?? ''}", 
-          style: CustomTextTheme().subtitle2),
+          style: CustomTextTheme.currentTheme.subtitle2),
         Text("Local: ${location.dimension ?? ''}", 
-          style: CustomTextTheme().subtitle2),
+          style: CustomTextTheme.currentTheme.subtitle2),
       ],
     ),
   );
