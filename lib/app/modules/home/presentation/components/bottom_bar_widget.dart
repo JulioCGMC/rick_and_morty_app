@@ -44,7 +44,7 @@ class BottomBarWidget extends StatelessWidget {
   Widget item(BuildContext context, String text, IconData icon, int index) {
     Color? color;
     if (index == currentIndex) {
-      color = DefaultStyle.currentTheme.primary;
+      color = DefaultStyle.currentTheme(context).primary;
     }
     return MaterialButton(
       minWidth: 40.w,
@@ -87,7 +87,7 @@ class BottomBarWidget extends StatelessWidget {
   //   );
   //   BottomNavigationBar(
   //     currentIndex: currentIndex,
-  //     backgroundColor: DefaultStyle.currentTheme.surface,
+  //     backgroundColor: DefaultStyle.currentTheme(context).surface,
   //     onTap: (index) => onTap!(index, true),
   //     items: <BottomNavigationBarItem>[
   //       BottomNavigationBarItem( icon: Icon(Icons.add), "Label",

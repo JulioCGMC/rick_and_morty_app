@@ -30,7 +30,7 @@ class CharacterCard extends StatelessWidget {
     height: 0.4.sw,
     decoration: BoxDecoration(
       borderRadius: borderRadius,
-      color: DefaultStyle.currentTheme.primary,
+      color: DefaultStyle.currentTheme(context).primary,
     ),
     child: ClipRRect(
       borderRadius: borderRadius,
@@ -43,10 +43,10 @@ class CharacterCard extends StatelessWidget {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Text(character.name, style: CustomTextTheme.currentTheme.headline4),
-        Text("Espécie: ${character.species}", style: CustomTextTheme.currentTheme.subtitle1),
-        Text("Gênero: ${character.gender.name}", style: CustomTextTheme.currentTheme.subtitle1),
-        Text("Situação atual: ${character.status.name}", style: CustomTextTheme.currentTheme.subtitle1),
+        Text(character.name, style: CustomTextTheme.currentTheme(context).headline4),
+        Text("Espécie: ${character.species}", style: CustomTextTheme.currentTheme(context).subtitle1),
+        Text("Gênero: ${character.gender.name}", style: CustomTextTheme.currentTheme(context).subtitle1),
+        Text("Situação atual: ${character.status.name}", style: CustomTextTheme.currentTheme(context).subtitle1),
       ],
     ),
   );

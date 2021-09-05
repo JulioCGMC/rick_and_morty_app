@@ -37,7 +37,7 @@ class CharactersTab extends StatelessWidget {
                       child: Center(
                         child: CircularProgressIndicator(
                           valueColor: AlwaysStoppedAnimation<Color>(
-                            DefaultStyle.currentTheme.primary)
+                            DefaultStyle.currentTheme(context).primary)
                         ),
                       )
                     );
@@ -61,7 +61,7 @@ class CharactersTab extends StatelessWidget {
             curve: Curves.bounceIn);
         } : null,
         icon: Icon(Icons.arrow_back_ios),
-        color: DefaultStyle.currentTheme.onPrimary,
+        color: DefaultStyle.currentTheme(context).onPrimary,
         disabledColor: Colors.grey[800],
       ),
       CharacterCard(character: controller.characters.elementAt(index)),
@@ -73,7 +73,7 @@ class CharactersTab extends StatelessWidget {
             curve: Curves.bounceIn);
         } : null,
         icon: Icon(Icons.arrow_forward_ios),
-        color: DefaultStyle.currentTheme.onPrimary,
+        color: DefaultStyle.currentTheme(context).onPrimary,
       ),
     ],
   );

@@ -45,13 +45,13 @@ class EpisodeCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(episode.name,
-              style: CustomTextTheme.currentTheme.headline6),
+              style: CustomTextTheme.currentTheme(context).headline6),
             Text(episode.episodeCode, 
-              style: CustomTextTheme.currentTheme.subtitle2),
+              style: CustomTextTheme.currentTheme(context).subtitle2),
           ],
         ),
         Text(translateDate(episode.airDate), 
-          style: CustomTextTheme.currentTheme.subtitle2,
+          style: CustomTextTheme.currentTheme(context).subtitle2,
           textAlign: TextAlign.right
         ),
       ],
@@ -67,7 +67,7 @@ class EpisodeCard extends StatelessWidget {
       borderRadius: BorderRadius.horizontal(
         left: borderRadius.topLeft
       ),
-      color: DefaultStyle.currentTheme.primary,
+      color: DefaultStyle.currentTheme(context).primary,
     ),
     child: FutureBuilder<Character?>(
       future: controller.getRandomFeaturedCharacter(episode.characters),

@@ -25,13 +25,13 @@ class LocationCard extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(location.name, style: CustomTextTheme.currentTheme.headline6),
+        Text(location.name, style: CustomTextTheme.currentTheme(context).headline6),
         Text("População: ${location.residents?.length ?? ''}", 
-          style: CustomTextTheme.currentTheme.subtitle2),
+          style: CustomTextTheme.currentTheme(context).subtitle2),
         Text("Tipo: ${location.type ?? ''}", 
-          style: CustomTextTheme.currentTheme.subtitle2),
+          style: CustomTextTheme.currentTheme(context).subtitle2),
         Text("Local: ${location.dimension ?? ''}", 
-          style: CustomTextTheme.currentTheme.subtitle2),
+          style: CustomTextTheme.currentTheme(context).subtitle2),
       ],
     ),
   );

@@ -46,7 +46,7 @@ class LoadingDialogImpl implements LoadingDialog {
         color: Theme.of(context).accentColor.withOpacity(.3),
         alignment: Alignment.center,
         child: CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation<Color>(DefaultStyle.currentTheme.primary)
+          valueColor: AlwaysStoppedAnimation<Color>(DefaultStyle.currentTheme(context).primary)
         ),
       );
     },

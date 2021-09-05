@@ -5,7 +5,9 @@ class CustomTextTheme {
   static LightTextTheme light = LightTextTheme();
   static DarkTextTheme dark = DarkTextTheme();
 
-  static TextTheme get currentTheme {
+  static TextTheme currentTheme(BuildContext context) {
+    bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
+    if (isDarkMode) return dark;
     return light;
   }
 }

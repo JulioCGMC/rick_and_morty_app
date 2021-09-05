@@ -5,7 +5,9 @@ class DefaultStyle {
   static const LightTheme light = LightTheme();
   static DarkTheme dark = DarkTheme();
 
-  static ColorScheme get currentTheme {
+  static ColorScheme currentTheme(BuildContext context) {
+    bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
+    if (isDarkMode) return dark;
     return light;
   }
 }

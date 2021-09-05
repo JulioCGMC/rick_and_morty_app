@@ -38,7 +38,7 @@ class LocationsTab extends StatelessWidget {
                     child: Center(
                       child: CircularProgressIndicator(
                         valueColor: AlwaysStoppedAnimation<Color>(
-                          DefaultStyle.currentTheme.primary)
+                          DefaultStyle.currentTheme(context).primary)
                       ),
                     )
                   );

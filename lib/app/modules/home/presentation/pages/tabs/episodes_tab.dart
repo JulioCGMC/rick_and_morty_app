@@ -39,7 +39,7 @@ class _EpisodesTabState extends ModularState<EpisodesTab,EpisodesController> {
                     child: Center(
                       child: CircularProgressIndicator(
                         valueColor: AlwaysStoppedAnimation<Color>(
-                          DefaultStyle.currentTheme.primary)
+                          DefaultStyle.currentTheme(context).primary)
                       ),
                     )
                   );

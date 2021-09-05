@@ -67,7 +67,7 @@ String translateDate(String date) {
     'April': 'Abril', 'May': 'Maio', 'June': 'Junho', 'July': 'Julho', 
     'August': 'Agosto', 'September': 'Setembro', 'October': 'Outubro', 
     'November': 'Novembro','December': 'Dezembro'
-  };;
+  };
   try {
     List<String> splited = date.split(' ');
     translated = "${splited[1].replaceAll(',','')} de ${dates[splited[0]]} de ${splited[2]}";
