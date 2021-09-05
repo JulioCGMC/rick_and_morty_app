@@ -61,8 +61,8 @@ class CharactersTab extends StatelessWidget {
             curve: Curves.bounceIn);
         } : null,
         icon: Icon(Icons.arrow_back_ios),
-        color: DefaultStyle.currentTheme(context).onPrimary,
-        disabledColor: Colors.grey[800],
+        color: DefaultStyle.currentTheme(context).onBackground,
+        disabledColor: DefaultStyle.currentTheme(context).surface,
       ),
       CharacterCard(character: controller.characters.elementAt(index)),
       IconButton(
@@ -73,7 +73,8 @@ class CharactersTab extends StatelessWidget {
             curve: Curves.bounceIn);
         } : null,
         icon: Icon(Icons.arrow_forward_ios),
-        color: DefaultStyle.currentTheme(context).onPrimary,
+        color: DefaultStyle.currentTheme(context).onBackground,
+        disabledColor: DefaultStyle.currentTheme(context).surface,
       ),
     ],
   );

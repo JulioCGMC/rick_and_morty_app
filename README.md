@@ -2,6 +2,13 @@
 
 Um aplicativo com glossário do Rick&MortyVerso para aprender um pouco... Mas de que importa, a vida é inútil e todos vamos morrer, agora me passa as torradas.
 
+### Screenshots
+
+<img src="assets/example/1.jpg" height="300em" /> <img src="assets/example/2.jpg" height="300em" /> <img src="assets/example/3.jpg" height="300em" />  <img src="assets/example/4.jpg" height="300em" />
+
+### Also in dark mode
+<img src="assets/example/1d.jpg" height="300em" /> <img src="assets/example/2d.jpg" height="300em" /> <img src="assets/example/3d.jpg" height="300em" /> <img src="assets/example/4d.jpg" height="300em" />
+
 ## How to Use
 
 ```
